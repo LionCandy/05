@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="google-signin-client_id" content="{{google_client_id}}">
+   <!-- -->
+  </head>
+<body>
+<!--
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a href="#" onclick="signOut();">Sign out</a>
+<a href="{{google_url}}"></a>
+-->
+<div id="google-signin-btn" onclick="{{google_url}}"></div>
+
+
+<script>
+    function renderButton() {
+      gapi.signin2.render('google-signin-btn', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark'
+      });
+    }
+</script>
+</body>
+
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+<!--
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="javascript.js"></script>
+-->
+</html>

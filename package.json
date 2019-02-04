@@ -1,0 +1,31 @@
+{
+  "name": "google_auth_nodejs",
+  "version": "1.0.0",
+  "description": "Authentication Google NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionCandy/05.git"
+  },
+  "keywords": [
+    "authentication",
+    "nodejs",
+    "google"
+  ],
+  "author": "EB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LionCandy/05/issues"
+  },
+  "homepage": "https://github.com/LionCandy/05#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "googleapis": "^37.1.0",
+    "server": "^1.0.18",
+    "vue-js-modal": "^1.3.28"
+  }
+}
